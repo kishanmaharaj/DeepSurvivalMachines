@@ -30,6 +30,8 @@ ga('create', 'G-TTD30SJCTB', 'auto'); ga('send', 'pageview');
 <section id="section-intro">
 <p><a href="https://travis-ci.org/autonlab/DeepSurvivalMachines"><img alt="Build Status" src="https://travis-ci.org/autonlab/DeepSurvivalMachines.svg?branch=master"></a>
 &nbsp;&nbsp;&nbsp;
+<a href="https://codecov.io/gh/autonlab/DeepSurvivalMachines"><img alt="codecov" src="https://codecov.io/gh/autonlab/DeepSurvivalMachines/branch/master/graph/badge.svg?token=FU1HB5O92D"></a>
+&nbsp;&nbsp;&nbsp;
 <a href="https://opensource.org/licenses/MIT"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/autonlab/DeepSurvivalMachines"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/autonlab/DeepSurvivalMachines?style=social"></a></p>
@@ -98,18 +100,37 @@ before determining the underlying survival distributions.</p>
 &gt;&gt;&gt; # estimate the predicted risks at the time
 &gt;&gt;&gt; model.predict_risk(x, 10)
 </code></pre>
+<h2 id="installation">Installation</h2>
+<pre><code class="language-console">foo@bar:~$ git clone https://github.com/autonlab/DeepSurvivalMachines.git
+foo@bar:~$ cd DeepSurvivalMachines
+foo@bar:~$ pip install -r requirements.txt
+</code></pre>
+<h2 id="examples">Examples</h2>
+<ol>
+<li><a href="https://nbviewer.jupyter.org/github/autonlab/DeepSurvivalMachines/blob/master/examples/DSM%20on%20SUPPORT%20Dataset.ipynb">Deep Survival Machines on the SUPPORT Dataset</a></li>
+</ol>
 <h2 id="references">References</h2>
 <p>Please cite the following papers if you are using the <code><a title="dsm" href="#dsm">dsm</a></code> package.</p>
 <p>[1] <a href="https://arxiv.org/abs/2003.01176">Deep Survival Machines:
 Fully Parametric Survival Regression and
-Representation Learning for Censored Data with Competing Risks."
-arXiv preprint arXiv:2003.01176 (2020)</a></a></p>
+Representation Learning for Censored Data with Competing Risks.
+IEEE Journal of Biomedical \&amp; Health Informatics (2021)</a></a></p>
 <pre><code>  @article{nagpal2020deep,
   title={Deep Survival Machines: Fully Parametric Survival Regression and\
   Representation Learning for Censored Data with Competing Risks},
   author={Nagpal, Chirag and Li, Xinyu and Dubrawski, Artur},
-  journal={arXiv preprint arXiv:2003.01176},
-  year={2020}
+  journal={IEEE Journal of Biomedical and Health Informatics},
+  year={2021}
+  }
+</code></pre>
+<p>[2] <a href="">Recurrent Deep Survival Machines:
+Deep Parametric Time-to-Event Regression with Time-Varying Covariates.
+AAAI Spring Symposium (2021)</a></a></p>
+<pre><code>  @article{nagpal2021rdsm,
+  title={Deep Parametric Time-to-Event Regression with Time-Varying Covariates},
+  author={Nagpal, Chirag and Jeanselme, Vincent and Dubrawski, Artur},
+  journal={AAAI Spring Symposium on Survival Analysis},
+  year={2021}
   }
 </code></pre>
 <h2 id="compatibility">Compatibility</h2>
@@ -142,6 +163,7 @@ downloads/assets/images/wordmarks-600x600-min.jpg">
 user/themes/auton/images/AutonLogo.png"></p>
 <p><br><br><br><br><br>
 <br><br><br><br><br></p>
+<div class="git-link-div"><a href="https://github.com/autonlab/DeepSurvivalMachines" class="git-link">Browse git</a></div>
 </section>
 <section>
 <h2 class="section-title" id="header-submodules">Sub-modules</h2>
@@ -193,6 +215,7 @@ These losses are optimized when training DSM.</p>
 </section>
 </article>
 <nav id="sidebar">
+<img src="https://ndownloader.figshare.com/files/26367844">
 <h1>Index</h1>
 <div class="toc">
 <ul>
@@ -201,6 +224,8 @@ These losses are optimized when training DSM.</p>
 <li><a href="#deep-recurrent-survival-machines">Deep Recurrent Survival Machines</a></li>
 <li><a href="#deep-convolutional-survival-machines">Deep Convolutional Survival Machines</a></li>
 <li><a href="#example-usage">Example Usage</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#examples">Examples</a></li>
 <li><a href="#references">References</a></li>
 <li><a href="#compatibility">Compatibility</a></li>
 <li><a href="#contributing">Contributing</a></li>
